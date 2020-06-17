@@ -1,4 +1,5 @@
 const preloader = document.querySelector('#preloader');
+const page = document.querySelector('.page')
 
 
 const fadeEffect = setInterval(() => {
@@ -7,7 +8,8 @@ const fadeEffect = setInterval(() => {
   }
   if (preloader.style.opacity > 0) {
     preloader.style.opacity -= 0.1;
-    preloader.style.zIndex = 100;
+    page.classList.add("load");
+    preloader.style.zIndex = -100;
   } else {
     clearInterval(fadeEffect);
   }

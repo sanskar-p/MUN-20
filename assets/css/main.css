@@ -21,6 +21,18 @@
 		scroll-behavior: smooth;
 	}
 
+	.page{
+		opacity: 0;
+		-webkit-transition: opacity 0.3s ease-in;
+       -moz-transition: opacity 0.3s ease-in;
+        -ms-transition: opacity 0.3s ease-in;
+         -o-transition: opacity 0.3s ease-in;
+		transition: opacity 0.3s ease-in;
+	}
+	.page.load{
+		opacity: 1;
+	}
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
