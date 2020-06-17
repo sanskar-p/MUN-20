@@ -1,8 +1,17 @@
-/*
-	Projection by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+const preloader = document.querySelector('#preloader');
+
+
+const fadeEffect = setInterval(() => {
+  if (!preloader.style.opacity) {
+    preloader.style.opacity = 1;
+  }
+  if (preloader.style.opacity > 0) {
+    preloader.style.opacity -= 0.1;
+    preloader.style.zIndex = 100;
+  } else {
+    clearInterval(fadeEffect);
+  }
+}, 150);
 
 (function($) {
 
@@ -65,13 +74,6 @@
 
 })(jQuery);
 
-// let header = document.querySelector('#header');
-
-// window.addEventListener("scroll", function() {navFunction()});
-
-// function navFunction(){
-
-// }
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
