@@ -1648,7 +1648,7 @@
 
 	a {
 		color: #719BE2;
-		text-decoration: underline;
+		/*text-decoration: underline;*/
 	}
 
 		a:hover {
@@ -3195,7 +3195,7 @@
 
 #comm h3{
 	text-align: center;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 .container{
@@ -3290,7 +3290,7 @@
 #contact h3{
 	text-align: center;
 	color: white;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 .contact-card{

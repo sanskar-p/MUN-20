@@ -28,6 +28,7 @@
 						<a href="#about">About</a>
 						<a href="#comm">Committees</a>
 						<a href="./secre.html">Secretariat</a>
+						<a href="./gallery.html">Gallery</a>
 						<a href="#contact">Contact</a>
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
@@ -36,7 +37,7 @@
 
 		<!-- Banner -->
 			<section id="banner">
-				<div class="inner">
+				<div class="inner fadein">
 					<header>
 						<h1>IIITA <span class="font-gradient">MUN</span>  '20</h1>
 					</header>
@@ -44,7 +45,8 @@
 					<div class="flex ">
 
 						<div>
-							<img src="./images/sarasva.png" width="60px" style="border-radius: 20px">
+							<a href="https://sarasva.iiita.ac.in/" target="_blank"><img src="./images/sarasva.png" width="60px" style="border-radius: 20px"></a>
+							
 							<h3>Sarasva</h3>
 							<p>The Literary Society</p>
 						</div>
@@ -56,7 +58,8 @@
 						</div>
 
 						<div>
-							<img src="./images/effe.png" width="60px" style="border-radius: 20px">
+							<a href="https://effe.org.in/" target="_blank"><img src="./images/effe.png" width="60px" style="border-radius: 20px"></a>
+							
 							<h3>Effervescence</h3>
 							<p>Lame theme</p>
 						</div>
@@ -70,21 +73,21 @@
 			</section>
 
 		<section id="about" class="wrapper">
-				<div class="inner">
+				<div class="inner fadein">
 					<header class="align-center">
-						<h3 style="text-decoration: underline;">About Us</h3>
+						<h3>About Us</h3>
 					</header>
 					<div class="image round left">
 						<img src="images/mun.png" alt="Pic 01" />
 					</div>
-					<p style="font-size: 1.1em">IIITA Model United Nations was the first Model United Nations in the city of Allahabad. Started in 2014, it is an initiative which aims to establish a healthy debating environment for young minds budding with ideas regarding the current political affairs across the globe. Delegates will work with participants from all over the country in a highly competitive environment, in dissecting world affairs and creating policies in a conference of the highest quality. We hope to transform you from stu­dents into future leaders, all the while creating unforgettable memories. To put it simply, Model UN is cos-play for people who find following current affairs equally interesting as a nerd would find his comics. However, MUN conferences differ from Comic Cons in that the delegates actually do use their superpowers of research, critical thinking, public speaking and teamwork to draft solutions to issues that have kept diplomats scratching their heads over the years. It is easy to dismiss MUNs as simply a simulation of the UN framework, but that would only tell the beginning of the story. (Not even the beginning, as modern day MUNs evolved from Model League of Nations, a simulation of the UN's failed predecessor.) With the joint creative forces of innumerable creative minds from high school and college students (and increasing numbers of people beyond) MUNs have evolved and diversified at unthinking proportions over the years. Today, any council - real or fictional, futuristic or historical - that seeks to resolve disputes by means of meaningful diplomacy can be found simulated at a Model UN conference. The Best Delegate and other mentions add a competitive flair to the collaborative environment and help bring out the unprecedented from the council.</p>
+					<p style="font-size: 1.1em; text-align: right;">IIITA Model United Nations was the first Model United Nations in the city of Allahabad. Started in 2014, it is an initiative which aims to establish a healthy debating environment for young minds budding with ideas regarding the current political affairs across the globe. Delegates will work with participants from all over the country in a highly competitive environment, in dissecting world affairs and creating policies in a conference of the highest quality. We hope to transform you from stu­dents into future leaders, all the while creating unforgettable memories. To put it simply, Model UN is cos-play for people who find following current affairs equally interesting as a nerd would find his comics. However, MUN conferences differ from Comic Cons in that the delegates actually do use their superpowers of research, critical thinking, public speaking and teamwork to draft solutions to issues that have kept diplomats scratching their heads over the years. It is easy to dismiss MUNs as simply a simulation of the UN framework, but that would only tell the beginning of the story. (Not even the beginning, as modern day MUNs evolved from Model League of Nations, a simulation of the UN's failed predecessor.) With the joint creative forces of innumerable creative minds from high school and college students (and increasing numbers of people beyond) MUNs have evolved and diversified at unthinking proportions over the years. Today, any council - real or fictional, futuristic or historical - that seeks to resolve disputes by means of meaningful diplomacy can be found simulated at a Model UN conference. The Best Delegate and other mentions add a competitive flair to the collaborative environment and help bring out the unprecedented from the council.</p>
 
 			</section>
 
 			<!-- Committees -->
 			<section id="comm">
 				<h3>Committees</h3>
-				<div class="container">
+				<div class="container fadein">
 					<div class="ittee">
 					<div class="img">
 						<div class="img-front">
@@ -118,8 +121,8 @@
 			</section>
 
 			<section id="contact">
-				<h3>Contact Us</h3>
-				<div class="container">
+				<h3>Get In Touch</h3>
+				<div class="container fadein">
 					<div class="contact-card">
 						<p>Name:</p>
                         <h4>Giriraj Chandak</h4>
@@ -148,7 +151,7 @@
 			</section>
 
 		<!-- Footer -->
-			<footer id="footer">
+			<!-- <footer id="footer">
 				<div class="inner">
 
 					<h3>Get in touch</h3>
@@ -175,7 +178,7 @@
 					
 
 				</div>
-			</footer>
+			</footer> -->
 			</div>
 
 		<!-- Scripts -->
@@ -184,6 +187,14 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+			<script type="text/javascript">
+				window.sr = ScrollReveal();
+				sr.reveal('.inner');
+				sr.reveal('.fadein');
+				sr.reveal('p');
+				sr.reveal('h4');
+				ScrollReveal({ reset: true });
+			</script>
 	</body>
 </html>
